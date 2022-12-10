@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Final Project</title>
+	<link rel="stylesheet" href="style.css">
+	<script src="https://kit.fontawesome.com/5a010fa73c.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+<header>
+	<img src="img/Top-laptop-brands-in-India.jpg" alt="laptop-header">
+	<h2>JAVASCRIPT PLAYGROUND</h2>
+</header>
+
+<main>
+	<div class="left">
+		<div class="card" id="story-hold">
+			<div class="head">Book Title</div>
+			<div class="body">
+				<textarea name="story-box" id="story" readonly></textarea>
+			</div>
+		</div>
+	</div>
+	<div class="right">
+		<div class="card" id="search-bar">
+			<div class="head">SEARCH</div>
+			<div class="body">
+				<form id="form">
+					<label><input type="text" id="searchQ"></label>
+					<button type="submit">search</button>
+				</form>
+			</div>
+		</div>
+		<div class="card">
+			<div class="head">Select a Book</div>
+			<div class="body">
+				<ul>
+					<li><a onclick="changeBook(1)">Alice In Wonderland</a></li>
+					<li><a onclick="changeBook(2)">Lord of the Rings</a></li>
+					<li><a onclick="changeBook(3)">Dr. Jekyll and Mr. Hyde</a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="card">
+			<div class="head">Most Used Words</div>
+			<div class="body" id="most-used">
+			</div>
+		</div>
+		<div class="card">
+			<div class="head">Least Used Words</div>
+			<div class="body" id="least-used">
+			</div>
+		</div>
+		<div class="card">
+			<div class="head">Document Stats</div>
+			<div class="body" id="doc-stats">
+			</div>
+		</div>
+	</div>
+</main>
+
+<script src="main.js"></script>
+</body>
+</html>
